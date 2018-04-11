@@ -1,0 +1,23 @@
+nr_tags=128
+nr_reserved_tags=0
+active_queues=0
+
+bitmap_tags:
+depth=128
+busy=0
+bits_per_word=32
+map_nr=4
+alloc_hint={48}
+wake_batch=8
+wake_index=0
+ws={
+	{.wait_cnt=8, .wait=inactive},
+	{.wait_cnt=8, .wait=inactive},
+	{.wait_cnt=8, .wait=inactive},
+	{.wait_cnt=8, .wait=inactive},
+	{.wait_cnt=8, .wait=inactive},
+	{.wait_cnt=8, .wait=inactive},
+	{.wait_cnt=8, .wait=inactive},
+	{.wait_cnt=8, .wait=inactive},
+}
+round_robin=0

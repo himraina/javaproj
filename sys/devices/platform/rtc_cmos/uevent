@@ -1,0 +1,2 @@
+DRIVER=rtc_cmos
+MODALIAS=platform:rtc_cmos

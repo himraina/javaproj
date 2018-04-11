@@ -1,0 +1,18 @@
+# This is private data. Do not parse.
+UID=1000
+USER=himani
+ACTIVE=1
+STATE=active
+REMOTE=0
+TYPE=x11
+CLASS=user
+SCOPE=session-c2.scope
+FIFO=/run/systemd/sessions/c2.ref
+SEAT=seat0
+DISPLAY=:0
+SERVICE=lightdm
+DESKTOP=ubuntu
+VTNR=7
+LEADER=1189
+REALTIME=1523438271970702
+MONOTONIC=54547967

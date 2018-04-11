@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<!-- ========================================================= -->
+<!--     Copyright (c) 2001 Nebula Internet Software, LLC      -->
+<!-- ========================================================= -->
+
+<!-- Build file for OSSearch(tm) src directory -->
+<project name="ossearch" default="all" basedir=".">
+
+    <path id="ossearch.classpath">
+         <pathelement path="../classes:../lib/mail.jar:../lib/activation.jar:../lib/jsdk.jar:../lib/jh.jar" />
+    </path>
+
+
+    <!-- Build the entire package -->
+    <target name="all" depends="build,docs" description="Build the entire package"/>    
+    
+    <!-- Build the source code -->
+    <target name="build" description="Build the source code">
+        <javac srcdir="./com/nebulais/ossearch/"
+               destdir="../classes"
+               classpathref="ossearch.classpath"
+               includes="*.java" />
+        <javac srcdir="./"
+               destdir="../classes"
+               classpathref="ossearch.classpath"
+               includes="*.java" />
+    </target>
+
+    <!-- Build documentation -->
+    <target name="docs" description="Build documentation">
+        <mkdir dir="../docs/javadocs" />
+        <javadoc packagenames="*.java,com/nebulais/ossearch/*"
+                 sourcepath="./"
+                 destdir="../docs/javadocs"
+                 author="true"
+                 version="true"
+                 windowtitle="OSSearch(tm) API"
+                 doctitle="OSSearch(tm)" />
+    </target>
+
+    <!-- Clean from build -->
+    <target name="clean" description="Clean from build">
+        <delete>
+            <fileset dir="../classes/com/nebulais/ossearch" includes="*.class" />
+            <fileset dir="../classes/" includes="*.class" />
+            <fileset dir="../docs/javadocs" />
+        </delete>
+    </target>
+</project>

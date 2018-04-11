@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+
+<!-- ========================================================= -->
+<!--     Copyright (c) 2001 Nebula Internet Software, LLC      -->
+<!-- ========================================================= -->
+
+<!-- Build file for OSSearch(tm) package -->
+<project name="ossearch" default="build" basedir=".">
+
+    <!-- =========================================================== -->
+    <!-- STEP 1: Set ftp property values                             -->
+    <!-- =========================================================== -->
+    
+    <property name="SERVER_NAME" value="www.yourdomain.com" />
+    <property name="USERNAME" value="your_username" />
+    <property name="PASSWORD" value="your_password" />
+    <property name="SERVLET_DIR" value="path/to/servlet/directory" />
+
+
+    <path id="ossearch.classpath">
+         <pathelement path="./classes:lib/mail.jar:./lib/activation.jar:./lib/jsdk.jar:./lib/jh.jar" />
+    </path>
+
+
+    <!-- Build OSSearch(tm) classes -->
+    <target name="build" description="Build OSSearch(tm) classes">
+        <ant dir="./src" />
+    </target>
+
+    <!-- Build documentation -->
+    <target name="docs" description="Build documentation">
+        <ant dir="./src" target="docs" />
+    </target>
+
+    <!-- Clean from build -->
+    <target name="clean" description="Clean from build">
+        <ant dir="./src" target="clean" />
+    </target>
+    
+    <!-- Install files to your web server -->
+    <target name="install" description="Install files to your web server">
+        <ftp server="${SERVER_NAME}"
+             remotedir="${SERVLET_DIR}"
+             action="send"
+             userid="${USERNAME}"
+             password="${PASSWORD}">
+ 
+             <fileset dir="./templates"
+                      includes="*.html,*.txt" />
+                      
+             <fileset dir="./classes/" />
+             
+             <fileset dir="./" includes="**/.keepme" />
+        </ftp>
+    </target>
+    
+    <!-- Update files on your web server -->
+    <target name="reinstall" description="Update files on your web server">
+        <ftp server="${SERVER_NAME}"
+             remotedir="${SERVLET_DIR}"
+             action="send"
+             depends="yes"
+             userid="${USERNAME}"
+             password="${PASSWORD}">
+ 
+             <fileset dir="./templates"
+                      includes="*.html,*.txt" />
+                      
+             <fileset dir="./classes/" />
+             
+             <fileset dir="./" includes="**/.keepme" />
+        </ftp>
+    </target>
+    
+    <!-- Delete files from your server -->
+    <target name="uninstall" description="Delete files from your server">
+        <ftp server="${SERVER_NAME}"
+             remotedir="${SERVLET_DIR}"
+             action="del"
+             userid="${USERNAME}"
+             password="${PASSWORD}">
+            <fileset includes="OSSearch*.class,ossearch_*" />
+        </ftp>
+        
+        <ftp server="${SERVER_NAME}"
+             remotedir="${SERVLET_DIR}/com/nebulais/ossearch"
+             action="del"
+             userid="${USERNAME}"
+             password="${PASSWORD}">
+            <fileset includes="**" />
+        </ftp>
+        <ftp server="${SERVER_NAME}"
+             remotedir="${SERVLET_DIR}/data/ossearch"
+             action="del"
+             userid="${USERNAME}"
+             password="${PASSWORD}">
+            <fileset includes="**" />
+        </ftp>
+    </target>
+</project>

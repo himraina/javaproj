@@ -1,0 +1,64 @@
+<!-------------------------------------------------------------->
+<!--     Copyright (c) 2001 Nebula Internet Software, LLC     -->
+<!-------------------------------------------------------------->
+
+<html>
+<head>
+<title>Building OSSearch(tm) v1.1.1 without Ant</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="600" border="0" cellspacing="0" cellpadding="6" align="center">
+<tr> 
+<td> 
+    <center>
+	<a href="http://www.nebulais.com/nebulaos.html">
+	<img src="nebula_OS2w.gif" width="275" height="66" border=0 alt="NebulaIS Open Source"></a>
+	</center><br><br>
+	<a href="INSTALL.html">Back to Installation Instructions</a>
+	<a name="build"></a>
+	<hr size="1"><br>
+	<b>Building OSSearch&#153; v1.1.1 without Ant:</b><br><br>
+	From the 'ossearch_v1.1.1' directory, compile all java files.
+<pre>
+> cd /ossearch/install/path/ossearch_v1.1.1
+> javac -classpath "./src:lib/mail.jar:lib/activation.jar:lib/jsdk.jar:lib/jh.jar" src/com/nebulais/ossearch/*.java
+> javac -classpath "./src:lib/mail.jar:lib/activation.jar:lib/jsdk.jar:lib/jh.jar" src/*.java
+</pre>
+	<i>Note:</i> On Windows replace ':' with ';'
+	<a name="install"></a>
+	<hr size="1"><br>
+	<b>Installing OSSearch&#153; v1.1.1 without Ant:</b><br><br>
+	<ol>
+		<li>Upload (or copy) <i>contents</i> of the 'classes' directory to the servlet directory.
+		<li>Upload (or copy) <i>contents</i> of the 'template' directory to the servlet directory.
+		<li>Upload (or copy) the 'data' directory to the servlet directory.
+	</ol>
+	The resulting files and directories on the web server should look as follows:
+<pre>
+/[SERVLET_DIR]/
+    OSSearchAdminServlet.class
+    OSSearchServlet.class
+    ossearch_1.html
+	
+    com/
+        nebulais/
+            ossearch/
+                *.class
+                server/
+                    *.class
+	
+    data/
+        ossearch/
+            ossearch.cfg
+</pre>
+	<hr size="1"><br>
+<a href="INSTALL.html">Back to Installation Instructions</a><br><br>
+	<center>
+	<br><br>Copyright &copy; 2001 <a href="http://www.nebulais.com/">Nebula Internet Software, LLC</a>
+	</center>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,77 @@
+##################################################################
+Copyright (c) 2001 Nebula Internet Software, LLC
+##################################################################
+
+
+Changes Log for OSSearch(tm):
+
+-------------------------------------------------------------------
+
+Version: v1.1
+Date:    March 18, 2000
+Author:  Nebula Internet Software, LLC (Keith A Bordonaro)
+Changes: 
+
+Updated to OSStandards(tm) style package with the new
+NebulaIS Open Source License.
+
+Exclude commonly used words like pronouns for the keywords.  This
+avoids a bias towards large documents.
+
+
+-------------------------------------------------------------------
+
+Version: v1.1.1
+Date:    May 1, 2001
+Author:  Nebula Internet Software, LLC (Keith A. Bordonaro)
+Changes: 
+
+1) Fixed typo in 'alternative.html' document.  The classpath was
+including './' instead of './src'.
+
+2) Removed hardcoded e-mail address in error message returned by
+the servlet.
+
+-------------------------------------------------------------------
+
+Version: 
+Date:    
+Author:  
+Changes: 
+
+-------------------------------------------------------------------
+
+Version: 
+Date:    
+Author:  
+Changes: 
+
+-------------------------------------------------------------------
+
+Version: 
+Date:    
+Author:  
+Changes: 
+
+-------------------------------------------------------------------
+
+Version: 
+Date:    
+Author:  
+Changes: 
+
+-------------------------------------------------------------------
+
+Version: 
+Date:    
+Author:  
+Changes: 
+
+-------------------------------------------------------------------
+
+Version: 
+Date:    
+Author:  
+Changes: 
+
+-------------------------------------------------------------------

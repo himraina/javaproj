@@ -1,0 +1,32 @@
+Log of fsck -C -a -T -t ext4 /dev/sda1 
+Wed Apr 11 09:17:02 2018
+
+/dev/sda1: recovering journal
+/dev/sda1: Clearing orphaned inode 270945 (uid=1000, gid=1000, mode=0100664, size=32768)
+/dev/sda1: Clearing orphaned inode 270944 (uid=1000, gid=1000, mode=0100600, size=1420)
+/dev/sda1: Clearing orphaned inode 316440 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 316427 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 315953 (uid=1000, gid=1000, mode=0100664, size=32768)
+/dev/sda1: Clearing orphaned inode 284052 (uid=1000, gid=1000, mode=0100600, size=1288)
+/dev/sda1: Clearing orphaned inode 316318 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 315965 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 315879 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 312773 (uid=1000, gid=1000, mode=0100640, size=85)
+/dev/sda1: Clearing orphaned inode 314134 (uid=1000, gid=1000, mode=0100640, size=1646)
+/dev/sda1: Clearing orphaned inode 312786 (uid=1000, gid=1000, mode=0100640, size=467)
+/dev/sda1: Clearing orphaned inode 3779 (uid=1000, gid=1000, mode=0100600, size=16384)
+/dev/sda1: Clearing orphaned inode 3778 (uid=1000, gid=1000, mode=0100600, size=16384)
+/dev/sda1: Clearing orphaned inode 3777 (uid=1000, gid=1000, mode=0100600, size=32768)
+/dev/sda1: Clearing orphaned inode 3776 (uid=1000, gid=1000, mode=0100600, size=32768)
+/dev/sda1: Clearing orphaned inode 3761 (uid=1000, gid=1000, mode=0100600, size=65536)
+/dev/sda1: Clearing orphaned inode 284278 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 315870 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 315871 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 314189 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 315869 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 313043 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: Clearing orphaned inode 315681 (uid=1000, gid=1000, mode=0100664, size=16979)
+/dev/sda1: clean, 260977/655360 files, 1877012/2618880 blocks
+
+Wed Apr 11 09:17:02 2018
+----------------

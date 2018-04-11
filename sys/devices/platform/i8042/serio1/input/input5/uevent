@@ -1,0 +1,8 @@
+PRODUCT=11/2/6/0
+NAME="ImExPS/2 Generic Explorer Mouse"
+PHYS="isa0060/serio1/input0"
+PROP=1
+EV=7
+KEY=1f0000 0 0 0 0
+REL=143
+MODALIAS=input:b0011v0002p0006e0000-e0,1,2,k110,111,112,113,114,r0,1,6,8,amlsfw

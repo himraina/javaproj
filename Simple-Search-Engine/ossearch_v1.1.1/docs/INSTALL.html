@@ -1,0 +1,114 @@
+<!-------------------------------------------------------------->
+<!--     Copyright (c) 2001 Nebula Internet Software, LLC     -->
+<!-------------------------------------------------------------->
+
+<html>
+<head>
+<title>NebulaOS - OSSearch(tm) v1.1.1 Installation Instructions</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="600" border="0" cellspacing="0" cellpadding="6" align="center">
+<tr> 
+<td> 
+    <center>
+	<a href="http://www.nebulais.com/nebulaos.html">
+	<img src="nebula_OS2w.gif" width="275" height="66" border=0 alt="NebulaIS Open Source"></a>
+	</center><br><br>
+	<b>OSSearch&#153; v1.1.1 Installation Instructions:</b><br><br>
+	<ol>
+		<li>Set default values in 'src/com/nebulais/ossearch/OSSearchConstants.java'<br><br>
+		<ul>
+	 		<li>ADMIN_EMAIL - The administrator's e-mail address
+	 		<li>ADMIN_NAME - The administrator's name (i.e., the from field of the e-mail)
+	 		<li>SERVLET_DIR - Servlet Directory (from root of the file system)
+			<li>SERVLET_URL - The url to the servlet's directory (include http://)
+		</ul><br>
+		<li>Build the package:  From the 'ossearch_v1.1.1' directory execute 'ant' [or <a href="alternative.html#build">build without Ant</a>]
+<pre>
+> cd /ossearch/install/path/ossearch_v1.1.1
+> ant
+</pre>
+		<li>Edit values in 'data/ossearch/ossearch.cfg'
+		<ol>
+			<li><font face="Courier,*">#root_url http://www.yoururl.com/</font><br>
+			Url to the top directory in the search.  Must start with http://.<br><br>
+			<li><font face="Courier,*">#root_path /your/htdocs/directory/</font><br>
+			File path from the root of the file system to the top directory in the search.<br><br>
+			<li><font face="Courier,*">#recursive true</font><br>
+			true or false?  Should the directory structure be recursively searched?<br><br>
+			<li><font face="Courier,*">#extensions .html .htm</font><br>
+			Whitespace separated list of file extensions to allow in the search.<br><br>
+			<li><font face="Courier,*">#exclude_dirs</font><br>
+			Whitespace separated list of directories to exclude from the search (relative to #root_path).<br><br>
+			<li><font face="Courier,*">#exclude_files</font><br>
+			Whitespace separated list of files to exclude from the search (relative to #root_path).<br><br>
+			<li><font face="Courier,*">#end</font><br>
+			Marks the end of the configuration file.<br><br>
+		</ol>
+		<li>Create a template file and save it to ossearch_1.html.  Take any html file you like
+		and the keywords below.  The keywords will be filled-in as described below and returned to the user as the result
+		of the Servlet.
+		<ul>
+			<li>%results% &#151; Inserts the results from the search.  An order list of up to 15 links.
+			<li>%keywords% &#151; Inserts a space separated list of the keywords which caused the results.
+			<li>%servlet_url% &#151; Url to the servlets directory including 'http://'.  To get the url
+			to your search engine servlet in the template, add '%servlet_url%/OSSearchServlet' to your
+			template.  This will expand to 'http://www.yoururl.com/your/servlet/directory/OSSearchServlet'
+		</ul><br>
+		<ul>
+			<li><i>Note:</i> A default template is supplied.
+			<li><i>Note:</i> Try to avoid using &quot;%&quot; signs in your templates.
+			<li><i>Note:</i> Make sure 'other' has permission in the #root_path directory (755)
+		</ul><br>
+		<li>Make sure the JSDK1.2 or higher is in your servlet environment.  If not, unjar jsdk.jar in your <i>SERVLET_DIR</i>.<br><br>
+		<li>Upload package to your server using Ant [or <a href="alternative.html#install">install without Ant</a>]<br><br>
+		<ol>
+			<li>Set ftp property values in 'build.xml' in the top level directory of OSSearch&#153;
+			<ul>
+				<li>SERVER_NAME &#151; Url or IP address of the web server to deploy OSSearch&#153; on.
+				<li>USERNAME &#151; Log-in name for the web server.
+				<li>PASSWORD &#151; Password for the given username on the web server.  For security reasons,
+				it's recommend that this value is removed after the upload is complete.
+				<li>SERVLET_DIR &#151; Path to the servlet directory to deploy OSSearch&#153; in (relative to the
+				username's home directory).
+			</ul><br>
+			<li>From the 'ossearch_v1.1.1' directory execute 'ant install'
+<pre>
+> cd /ossearch/install/path/ossearch_v1.1.1
+> ant install
+</pre>
+<i>Note:</i> Other Ant ftp targets include, 'uninstall' and 'reinstall.'  Uninstall removes all OSSearch&#153; files from
+the web server.  Reinstall only uploads OSSearch&#153; files which are newer than those already on the
+web server.
+		</ol><br>
+		<li>Integrate into your web site.  Cut and Paste the following form into your web page(s). <br><br>
+<i>Note:</i> Replace www.yoururl.com with your domain name or IP Address.
+<form>
+<textarea rows="8" cols="60">
+<form name="search" method=POST action="http://www.yoururl.com/servlets/OSSearchServlet">
+<table border=0 cellpadding="6" cellspacing="6">
+<tr>
+<td align="center">
+<font size="-1" face="Veranda, Helvetica, sans-serif"><b>Search Again:</b></font>
+</td>
+<td align="center">
+<input type="text" name="keywords" size="25" value="netfairway">
+</td>
+<td align="center">
+<input type="image" border=0 src="../images/search.gif" align="left" alt="Search NebulaIS.com"> 
+</td>
+</tr>
+</table>
+</form>
+</textarea>
+</form>
+	</ol>
+	<center>
+	<br><br>Copyright &copy; 2001 <a href="http://www.nebulais.com/">Nebula Internet Software, LLC</a>
+	</center>
+</td>
+</tr>
+</table>
+</body>
+</html>

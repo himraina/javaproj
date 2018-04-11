@@ -1,0 +1,30 @@
+bus pci, device 0000:00:06.0
+OHCI PCI host controller
+ohci_hcd
+OHCI 1.0, NO legacy support registers, rh state running
+control 0x28f RWC HCFS=operational IE PLE CBSR=3
+cmdstatus 0x00000 SOC=0
+intrstatus 0x00000024 FNO SF
+intrenable 0x8000005a MIE RHSC UE RD WDH
+ed_controlhead 34cfa000
+hcca frame 0x8812
+fmintvl 0xa7782edf FIT FSMPS=0xa778 FI=0x2edf
+fmremaining 0x80000000 FRT FR=0x0000
+periodicstart 0x2a2f
+lsthresh 0x0628
+hub poll timer off
+roothub.a 0000020c POTPGT=0 NPS NDP=12(12)
+roothub.b 00000000 PPCM=0000 DR=0000
+roothub.status 00008000 DRWE
+roothub.portstatus [0] 0x00000103 PPS PES CCS
+roothub.portstatus [1] 0x00000100 PPS
+roothub.portstatus [2] 0x00000100 PPS
+roothub.portstatus [3] 0x00000100 PPS
+roothub.portstatus [4] 0x00000100 PPS
+roothub.portstatus [5] 0x00000100 PPS
+roothub.portstatus [6] 0x00000100 PPS
+roothub.portstatus [7] 0x00000100 PPS
+roothub.portstatus [8] 0x00000100 PPS
+roothub.portstatus [9] 0x00000100 PPS
+roothub.portstatus [10] 0x00000100 PPS
+roothub.portstatus [11] 0x00000100 PPS

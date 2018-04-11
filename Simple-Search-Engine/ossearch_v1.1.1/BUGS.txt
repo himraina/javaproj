@@ -1,0 +1,151 @@
+##################################################################
+Copyright (c) 2001 Nebula Internet Software, LLC
+##################################################################
+
+
+Bugs Log for OSSearch(tm):
+
+Please report bugs to:
+bugs@nebulais.com
+
+Please provide the following information:
+1) Platform?
+2) Browser and version?
+3) Bug descriptions?
+4) Is bug repeatable?
+  a) "Yes!" What actions lead to bug?
+5) Warnings messages give by JavaScript or the browser?
+6) Your name and contact information.
+
+Anything you can do to simplify the bug environment please do so.
+Your help is greatly appreciated!
+
+-------------------------------------------------------------------
+
+Status:   [ ] Closed  [ ] Open  [ ] Hacked
+Version:  
+Date:     
+Submit:   
+Platform: 
+Browser:  
+Bug:      
+Repeats:  [ ] Yes  [ ] No
+  Yes,:   
+Warnings: 
+Contact:  
+Fix:      
+Fix:     
+
+-------------------------------------------------------------------
+
+Status:   [ ] Closed  [ ] Open  [ ] Hacked
+Version:  
+Date:     
+Submit:   
+Platform: 
+Browser:  
+Bug:      
+Repeats:  [ ] Yes  [ ] No
+  Yes,:   
+Warnings: 
+Contact:  
+Fix:      
+Fix:     
+
+-------------------------------------------------------------------
+
+Status:   [ ] Closed  [ ] Open  [ ] Hacked
+Version:  
+Date:     
+Submit:   
+Platform: 
+Browser:  
+Bug:      
+Repeats:  [ ] Yes  [ ] No
+  Yes,:   
+Warnings: 
+Contact:  
+Fix:      
+Fix:     
+
+-------------------------------------------------------------------
+
+Status:   [ ] Closed  [ ] Open  [ ] Hacked
+Version:  
+Date:     
+Submit:   
+Platform: 
+Browser:  
+Bug:      
+Repeats:  [ ] Yes  [ ] No
+  Yes,:   
+Warnings: 
+Contact:  
+Fix:      
+Fix:     
+
+-------------------------------------------------------------------
+
+Status:   [ ] Closed  [ ] Open  [ ] Hacked
+Version:  
+Date:     
+Submit:   
+Platform: 
+Browser:  
+Bug:      
+Repeats:  [ ] Yes  [ ] No
+  Yes,:   
+Warnings: 
+Contact:  
+Fix:      
+Fix:     
+
+-------------------------------------------------------------------
+
+Status:   [ ] Closed  [ ] Open  [ ] Hacked
+Version:  
+Date:     
+Submit:   
+Platform: 
+Browser:  
+Bug:      
+Repeats:  [ ] Yes  [ ] No
+  Yes,:   
+Warnings: 
+Contact:  
+Fix:      
+Fix:     
+
+-------------------------------------------------------------------
+
+Status:   [ ] Closed  [ ] Open  [ ] Hacked
+Version:  
+Date:     
+Submit:   
+Platform: 
+Browser:  
+Bug:      
+Repeats:  [ ] Yes  [ ] No
+  Yes,:   
+Warnings: 
+Contact:  
+Fix:      
+Fix:     
+
+-------------------------------------------------------------------
+
+Status:   [ ] Closed  [ ] Open  [ ] Hacked
+Version:  
+Date:     
+Submit:   
+Platform: 
+Browser:  
+Bug:      
+Repeats:  [ ] Yes  [ ] No
+  Yes,:   
+Warnings: 
+Contact:  
+Fix:      
+Fix:     
+
+-------------------------------------------------------------------

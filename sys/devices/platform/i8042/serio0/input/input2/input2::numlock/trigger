@@ -1,0 +1,1 @@
+none rfkill-any kbd-scrolllock [kbd-numlock] kbd-capslock kbd-kanalock kbd-shiftlock kbd-altgrlock kbd-ctrllock kbd-altlock kbd-shiftllock kbd-shiftrlock kbd-ctrlllock kbd-ctrlrlock AC-online BAT0-charging-or-full BAT0-charging BAT0-full BAT0-charging-blink-full-solid usb-gadget usb-host disk-activity ide-disk mtd nand-disk cpu cpu0 panic 
